@@ -3,8 +3,6 @@ import json
 import re
 from pathlib import Path
 
-from rank_bm25 import BM25Okapi
-from sentence_transformers import SentenceTransformer, CrossEncoder, util
 
 from app.ingestion.chunking import (
     fixed_size_chunks,
@@ -77,6 +75,10 @@ class HybridSearch:
         if not documents:
             raise ValueError("At least one document is required")
 
+        from rank_bm25 import BM25Okapi
+        from sentence_transformers import SentenceTransformer, CrossEncoder, util
+
+        self.util = util
         self.documents = documents
 
         print("Building BM25 index...", flush=True)
@@ -86,6 +88,7 @@ class HybridSearch:
 
         print("Loading sentence transformer model...", flush=True)
         self.model = SentenceTransformer(MODEL_NAME)
+
         print("Loading cross-encoder reranker...", flush=True)
         self.reranker = CrossEncoder(
             "cross-encoder/ms-marco-MiniLM-L-6-v2"
@@ -139,7 +142,7 @@ class HybridSearch:
         )
 
         # 5. Calculate semantic similarity
-        semantic_scores = util.cos_sim(
+        semantic_scores = self.util.cos_sim(
             embeddings[0],
             embeddings[1:],
         )[0].cpu().tolist()
