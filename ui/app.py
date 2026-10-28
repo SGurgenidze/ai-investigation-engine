@@ -13,7 +13,7 @@ st.write("Ask questions and investigate evidence across documents.")
 
 api_url = st.sidebar.text_input(
     "Backend URL",
-    value="https://ai-investigation-engine-gfbt.onrender.com",
+    value="https://ai-investigation-engine-backend.onrender.com",
 )
 
 question = st.text_area(
