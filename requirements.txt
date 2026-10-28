@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+streamlit
+requests
+python-dotenv
+pydantic
+pytest
+datasets
+pypdf
+python-docx
+python-pptx
+numpy
+sentence-transformers
+rank-bm25
+google-genai
+

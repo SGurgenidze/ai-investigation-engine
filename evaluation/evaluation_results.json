@@ -1,0 +1,1632 @@
+[
+  {
+    "strategy": "fixed",
+    "chunks_loaded": 94452,
+    "answerable_questions_scored": 40,
+    "no_answer_questions_excluded": 5,
+    "mean_recall_at_5": 1.0,
+    "mean_mrr_at_10": 1.0,
+    "no_answer_correct": 5,
+    "no_answer_false_accepts": 0,
+    "answerable_false_rejections": 0,
+    "no_answer_detection_accuracy": 1.0,
+    "threshold": 2.5,
+    "question_results": [
+      {
+        "question": "What is Radio City?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City Music Hall",
+          "Radio City (Indian radio station)",
+          "WTMJ (AM)",
+          "Radio Windy"
+        ],
+        "top_rerank_score": 8.93290901184082,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Radio City started?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Radio Windy",
+          "Radio City Music Hall",
+          "Polish Radio Łuck"
+        ],
+        "top_rerank_score": 8.928794860839844,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What frequency does Radio City broadcast on?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio Windy",
+          "CHOI-FM",
+          "WXNY-FM",
+          "KEC80"
+        ],
+        "top_rerank_score": 7.457505702972412,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Which languages of songs does Radio City play?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Radio City Music Hall",
+          "Hot Latin Songs",
+          "CHOI-FM"
+        ],
+        "top_rerank_score": 5.104936122894287,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Radio City launched in Hyderabad?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Loafer (2015 film)",
+          "Deccan Airways Limited",
+          "Orange (2010 soundtrack)"
+        ],
+        "top_rerank_score": 7.978514194488525,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is Echosmith?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Echosmith",
+          "Skiffle",
+          "Future Fibre Technologies",
+          "El-P"
+        ],
+        "top_rerank_score": 9.933306694030762,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Echosmith formed?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Oh-OK",
+          "New Order (band)",
+          "The Electrics",
+          "Alastis"
+        ],
+        "top_rerank_score": 8.71512222290039,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where was Echosmith formed?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Pezband",
+          "Everclear (band)",
+          "Skeletal Family",
+          "Alastis"
+        ],
+        "top_rerank_score": 9.02565860748291,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Which song is Echosmith best known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Indeep",
+          "The Nosebleed Section",
+          "H. P. Lovecraft (album)",
+          "Benny Hester"
+        ],
+        "top_rerank_score": 8.351070404052734,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who are the members of Echosmith mentioned in the document?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Brailo Tezalović",
+          "Evangelicals and Catholics Together",
+          "Brailo Tezalović",
+          "The Invisible Man (Queen song)"
+        ],
+        "top_rerank_score": 3.7238593101501465,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the First Arthur County Courthouse and Jail used for today?",
+        "answerable": true,
+        "relevant_titles": [
+          "First Arthur County Courthouse and Jail"
+        ],
+        "top_5_titles": [
+          "First Arthur County Courthouse and Jail",
+          "Aroostook County Courthouse and Jail",
+          "New York County Courthouse",
+          "Tryon County, New York",
+          "Martinsburg Town Hall"
+        ],
+        "top_rerank_score": 7.519228935241699,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was Arthur's Magazine?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "King Arthur (DC Comics)",
+          "When the Twerms Came"
+        ],
+        "top_rerank_score": 10.544082641601562,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where was Arthur's Magazine published?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "When the Twerms Came",
+          "King Arthur (DC Comics)"
+        ],
+        "top_rerank_score": 10.243627548217773,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Arthur's Magazine published?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "When the Twerms Came",
+          "King Arthur (DC Comics)",
+          "Arthur Koestler (book)"
+        ],
+        "top_rerank_score": 10.304105758666992,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who edited Arthur's Magazine?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "Stranger on the Square",
+          "H. Maria George Colby"
+        ],
+        "top_rerank_score": 9.970111846923828,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was First for Women magazine started?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "Gynaika Magazine",
+          "List of magazines in Malaysia",
+          "Demet (magazine)",
+          "Rabotnitsa"
+        ],
+        "top_rerank_score": 10.000467300415039,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is First for Women based?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "Women's colleges in the Southern United States",
+          "Texas Conference for Women",
+          "Women's athletics in Australia",
+          "Women's athletics in Australia"
+        ],
+        "top_rerank_score": 9.517942428588867,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was the circulation of First for Women in 2011?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "2011 7-Dorpenomloop Aalburg",
+          "Women's Health (magazine)",
+          "2011 US Open Series",
+          "Demet (magazine)"
+        ],
+        "top_rerank_score": 8.803099632263184,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was the Freeway Complex Fire?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "2014 California wildfires",
+          "Great Fire of 1910",
+          "Carpenter 1 Fire",
+          "Tullamarine Freeway"
+        ],
+        "top_rerank_score": 10.393672943115234,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did the Freeway Complex Fire start?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "Interstate 225",
+          "2014 California wildfires",
+          "Blackwater Fire of 1937",
+          "Shirley Fire"
+        ],
+        "top_rerank_score": 10.215326309204102,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "How many residences were destroyed by the Freeway Complex Fire?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "1994 Eastern seaboard fires",
+          "Great Baltimore Fire",
+          "1994 Eastern seaboard fires",
+          "2013 Colorado wildfires"
+        ],
+        "top_rerank_score": 8.873180389404297,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where did the Freeway Complex Fire occur?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "Carpenter 1 Fire",
+          "2014 California wildfires",
+          "Laurier Palace Theatre fire",
+          "1866 Great fire of Portland, Maine"
+        ],
+        "top_rerank_score": 9.473810195922852,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who founded William Rast?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "Matt Conable",
+          "Durant (automobile)",
+          "William Grant &amp; Sons",
+          "William Luther Pierce"
+        ],
+        "top_rerank_score": 9.898160934448242,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What product is William Rast best known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "William Katt",
+          "Antonio Vivaldi",
+          "William Friedkin",
+          "William Motzing"
+        ],
+        "top_rerank_score": 7.8532891273498535,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the first William Rast fashion show?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "Charles Cruft (showman)",
+          "Victoria's Secret Fashion Show 2002",
+          "Norman Norell",
+          "Fashion Queens"
+        ],
+        "top_rerank_score": 8.657925605773926,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is the Ritz-Carlton Jakarta located?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ritz-Carlton Jakarta"
+        ],
+        "top_5_titles": [
+          "Ritz-Carlton Jakarta",
+          "The Ritz-Carlton, Georgetown",
+          "Carlton House Block",
+          "Carlton House",
+          "Kebayoran Baru"
+        ],
+        "top_rerank_score": 10.92417049407959,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did the Ritz-Carlton Jakarta hotel open?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ritz-Carlton Jakarta"
+        ],
+        "top_5_titles": [
+          "Ritz-Carlton Jakarta",
+          "The Ritz-Carlton, Georgetown",
+          "The Ritz-Carlton, Georgetown",
+          "Carlton Theatre",
+          "Manor and Cottages"
+        ],
+        "top_rerank_score": 8.076568603515625,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the Oberoi family known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "Oberoi family"
+        ],
+        "top_5_titles": [
+          "Oberoi family",
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Motorenfabrik Oberursel",
+          "Ishqbaaaz"
+        ],
+        "top_rerank_score": 9.108293533325195,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is Ishqbaaaz?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Peşrev",
+          "Hip hop",
+          "Tributyltin oxide"
+        ],
+        "top_rerank_score": 9.26367473602295,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did Ishqbaaaz premiere?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Vacation with Derek",
+          "World Premiere (film)",
+          "The American Ruling Class"
+        ],
+        "top_rerank_score": 8.595306396484375,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who portrays Shivaay in Ishqbaaaz?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Aneri Vajani",
+          "Alison DiLaurentis",
+          "Ken Leung"
+        ],
+        "top_rerank_score": 9.203912734985352,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is Hotel Tallcorn located?",
+        "answerable": true,
+        "relevant_titles": [
+          "Hotel Tallcorn"
+        ],
+        "top_5_titles": [
+          "Hotel Tallcorn",
+          "Hotel Tallcorn",
+          "1717 Broadway",
+          "Crowne Plaza Hotel, Times Square",
+          "Elston Hall"
+        ],
+        "top_rerank_score": 10.222265243530273,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Hotel Tallcorn built?",
+        "answerable": true,
+        "relevant_titles": [
+          "Hotel Tallcorn"
+        ],
+        "top_5_titles": [
+          "Hotel Tallcorn",
+          "Hotel Tallcorn",
+          "Manor and Cottages",
+          "Iowana Hotel",
+          "InterContinental Miami"
+        ],
+        "top_rerank_score": 9.064179420471191,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who founded Oberoi Hotels & Resorts?",
+        "answerable": true,
+        "relevant_titles": [
+          "Mohan Singh Oberoi"
+        ],
+        "top_5_titles": [
+          "Mohan Singh Oberoi",
+          "The Oberoi Group",
+          "Oberoi family",
+          "Meliá Hotels International",
+          "Maxposure Media Group"
+        ],
+        "top_rerank_score": 10.120874404907227,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was The Oberoi Group founded?",
+        "answerable": true,
+        "relevant_titles": [
+          "The Oberoi Group"
+        ],
+        "top_5_titles": [
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Maxposure Media Group",
+          "Oberoi family",
+          "North Group"
+        ],
+        "top_rerank_score": 8.993195533752441,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is The Oberoi Group headquartered?",
+        "answerable": true,
+        "relevant_titles": [
+          "The Oberoi Group"
+        ],
+        "top_5_titles": [
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Maxposure Media Group",
+          "Oberoi family",
+          "Group O"
+        ],
+        "top_rerank_score": 8.670085906982422,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What does Future Fibre Technologies produce?",
+        "answerable": true,
+        "relevant_titles": [
+          "Future Fibre Technologies"
+        ],
+        "top_5_titles": [
+          "Future Fibre Technologies",
+          "FMC Technologies",
+          "Reinforced thermoplastic pipe",
+          "Internet Advisor",
+          "SolarWorld"
+        ],
+        "top_rerank_score": 7.027220726013184,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is Future Fibre Technologies based?",
+        "answerable": true,
+        "relevant_titles": [
+          "Future Fibre Technologies"
+        ],
+        "top_5_titles": [
+          "Future Fibre Technologies",
+          "Dell Technologies",
+          "InPhase Technologies",
+          "Homestead Technologies",
+          "Mirror Worlds"
+        ],
+        "top_rerank_score": 11.270689010620117,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the 289th Military Police Company activated?",
+        "answerable": true,
+        "relevant_titles": [
+          "289th Military Police Company"
+        ],
+        "top_5_titles": [
+          "289th Military Police Company",
+          "Yongjugol",
+          "299th Cavalry Regiment (United States)",
+          "VI Corps (United States)",
+          "5th Marine Division (United States)"
+        ],
+        "top_rerank_score": 10.633234977722168,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the Glennwanis Hotel built?",
+        "answerable": true,
+        "relevant_titles": [
+          "Glennwanis Hotel"
+        ],
+        "top_5_titles": [
+          "Glennwanis Hotel",
+          "Manor and Cottages",
+          "Glennwanis Hotel",
+          "Iowana Hotel",
+          "Green Hotel"
+        ],
+        "top_rerank_score": 9.260640144348145,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the population of Mars City in 2025?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Groningen",
+          "Kansas City, Missouri",
+          "Quebec City",
+          "Lake City, Florida",
+          "Aghajari"
+        ],
+        "top_rerank_score": -3.6221959590911865,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "Who won the 2025 World Chess Championship?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Arthur Feuerstein",
+          "Eugenio Torre",
+          "Ellen Gilbert",
+          "Bobby Fischer Against the World",
+          "Roel Boomstra"
+        ],
+        "top_rerank_score": 2.2412590980529785,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "What is the current stock price of ExampleCorp?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "New World Department Store China",
+          "Bre-X",
+          "GlaxoSmithKline",
+          "Shenzhen Stock Exchange",
+          "London Stock Exchange"
+        ],
+        "top_rerank_score": -5.203190803527832,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "What is the chemical formula of the fictional element Novarium?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Gold(III) chloride",
+          "Piperidine",
+          "Aluminium oxide",
+          "Tributyltin oxide",
+          "Cyclopropenone"
+        ],
+        "top_rerank_score": -6.02952766418457,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "How many moons does the fictional planet Zorvax have?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "13 Moons",
+          "Miranda (moon)",
+          "Swift (Deimian crater)",
+          "HD 16417 b",
+          "530 Turandot"
+        ],
+        "top_rerank_score": -4.979798316955566,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      }
+    ]
+  },
+  {
+    "strategy": "sentence",
+    "chunks_loaded": 94980,
+    "answerable_questions_scored": 40,
+    "no_answer_questions_excluded": 5,
+    "mean_recall_at_5": 0.975,
+    "mean_mrr_at_10": 0.975,
+    "no_answer_correct": 5,
+    "no_answer_false_accepts": 0,
+    "answerable_false_rejections": 0,
+    "no_answer_detection_accuracy": 1.0,
+    "threshold": 2.5,
+    "question_results": [
+      {
+        "question": "What is Radio City?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City Music Hall",
+          "Radio City (Indian radio station)",
+          "WTMJ (AM)",
+          "KSL (radio)"
+        ],
+        "top_rerank_score": 8.89482307434082,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Radio City started?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Radio Windy",
+          "Radio City Music Hall",
+          "DXCC-AM"
+        ],
+        "top_rerank_score": 8.965866088867188,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What frequency does Radio City broadcast on?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio Windy",
+          "CHOI-FM",
+          "WXNY-FM",
+          "KUER-FM",
+          "KEC80"
+        ],
+        "top_rerank_score": 4.143253326416016,
+        "predicted_no_answer": false,
+        "recall_at_5": 0.0,
+        "reciprocal_rank_at_10": 0.0
+      },
+      {
+        "question": "Which languages of songs does Radio City play?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Radio City Music Hall",
+          "Country radio",
+          "CHOI-FM"
+        ],
+        "top_rerank_score": 5.047502517700195,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Radio City launched in Hyderabad?",
+        "answerable": true,
+        "relevant_titles": [
+          "Radio City (Indian radio station)"
+        ],
+        "top_5_titles": [
+          "Radio City (Indian radio station)",
+          "Radio City (Indian radio station)",
+          "Loafer (2015 film)",
+          "Deccan Airways Limited",
+          "Baadshah (soundtrack)"
+        ],
+        "top_rerank_score": 7.89022159576416,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is Echosmith?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Echosmith",
+          "Future Fibre Technologies",
+          "El-P",
+          "Eutrapela"
+        ],
+        "top_rerank_score": 10.153894424438477,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Echosmith formed?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Oh-OK",
+          "The Electrics",
+          "Alastis",
+          "Deftones"
+        ],
+        "top_rerank_score": 9.022260665893555,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where was Echosmith formed?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Everclear (band)",
+          "Pezband",
+          "Skeletal Family",
+          "Alastis"
+        ],
+        "top_rerank_score": 9.338493347167969,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Which song is Echosmith best known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Echosmith",
+          "Indeep",
+          "Wooden Heart",
+          "Mountain (band)"
+        ],
+        "top_rerank_score": 9.856498718261719,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who are the members of Echosmith mentioned in the document?",
+        "answerable": true,
+        "relevant_titles": [
+          "Echosmith"
+        ],
+        "top_5_titles": [
+          "Echosmith",
+          "Brailo Tezalović",
+          "Evangelicals and Catholics Together",
+          "The Invisible Man (Queen song)",
+          "Vala (Middle-earth)"
+        ],
+        "top_rerank_score": 4.234951019287109,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the First Arthur County Courthouse and Jail used for today?",
+        "answerable": true,
+        "relevant_titles": [
+          "First Arthur County Courthouse and Jail"
+        ],
+        "top_5_titles": [
+          "First Arthur County Courthouse and Jail",
+          "Aroostook County Courthouse and Jail",
+          "Tryon County, New York",
+          "New York County Courthouse",
+          "Martinsburg Town Hall"
+        ],
+        "top_rerank_score": 7.519228935241699,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was Arthur's Magazine?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "H. Maria George Colby",
+          "King Arthur (DC Comics)"
+        ],
+        "top_rerank_score": 10.544082641601562,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where was Arthur's Magazine published?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "King Arthur (DC Comics)"
+        ],
+        "top_rerank_score": 10.24362564086914,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Arthur's Magazine published?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "When the Twerms Came",
+          "King Arthur (DC Comics)",
+          "Arthur's Lady's Home Magazine"
+        ],
+        "top_rerank_score": 10.304105758666992,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who edited Arthur's Magazine?",
+        "answerable": true,
+        "relevant_titles": [
+          "Arthur's Magazine"
+        ],
+        "top_5_titles": [
+          "Arthur's Magazine",
+          "Arthur's Lady's Home Magazine",
+          "Arthur Frommer",
+          "Stranger on the Square",
+          "Anthony Buttitta"
+        ],
+        "top_rerank_score": 9.970111846923828,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was First for Women magazine started?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "Gynaika Magazine",
+          "List of magazines in Malaysia",
+          "Demet (magazine)",
+          "List of magazines in China"
+        ],
+        "top_rerank_score": 10.000467300415039,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is First for Women based?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "Women's colleges in the Southern United States",
+          "Texas Conference for Women",
+          "Women's athletics in Australia",
+          "Center for Women's Global Leadership"
+        ],
+        "top_rerank_score": 9.517942428588867,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was the circulation of First for Women in 2011?",
+        "answerable": true,
+        "relevant_titles": [
+          "First for Women"
+        ],
+        "top_5_titles": [
+          "First for Women",
+          "2011 7-Dorpenomloop Aalburg",
+          "Women's Health (magazine)",
+          "2011 US Open Series",
+          "List of magazines in Malaysia"
+        ],
+        "top_rerank_score": 8.803099632263184,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What was the Freeway Complex Fire?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "2014 California wildfires",
+          "Great Fire of 1910",
+          "Tullamarine Freeway",
+          "Great Baltimore Fire"
+        ],
+        "top_rerank_score": 10.393672943115234,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did the Freeway Complex Fire start?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "Interstate 225",
+          "2014 California wildfires",
+          "Blackwater Fire of 1937",
+          "Shirley Fire"
+        ],
+        "top_rerank_score": 10.215326309204102,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "How many residences were destroyed by the Freeway Complex Fire?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "1994 Eastern seaboard fires",
+          "Oklahoma City bombing",
+          "Woodbine Building Supply fire",
+          "2013 Colorado wildfires"
+        ],
+        "top_rerank_score": 8.873180389404297,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where did the Freeway Complex Fire occur?",
+        "answerable": true,
+        "relevant_titles": [
+          "Freeway Complex Fire"
+        ],
+        "top_5_titles": [
+          "Freeway Complex Fire",
+          "2014 California wildfires",
+          "Carpenter 1 Fire",
+          "Laurier Palace Theatre fire",
+          "1866 Great fire of Portland, Maine"
+        ],
+        "top_rerank_score": 9.473810195922852,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who founded William Rast?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "Matt Conable",
+          "Durant (automobile)",
+          "William Grant &amp; Sons",
+          "William Luther Pierce"
+        ],
+        "top_rerank_score": 9.898160934448242,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What product is William Rast best known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "William Katt",
+          "Bud Luckey",
+          "William Friedkin",
+          "William Motzing"
+        ],
+        "top_rerank_score": 7.8532891273498535,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the first William Rast fashion show?",
+        "answerable": true,
+        "relevant_titles": [
+          "William Rast"
+        ],
+        "top_5_titles": [
+          "William Rast",
+          "Charles Cruft (showman)",
+          "Victoria's Secret Fashion Show 2002",
+          "Fashion Queens",
+          "Norman Norell"
+        ],
+        "top_rerank_score": 8.657925605773926,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is the Ritz-Carlton Jakarta located?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ritz-Carlton Jakarta"
+        ],
+        "top_5_titles": [
+          "Ritz-Carlton Jakarta",
+          "The Ritz-Carlton, Georgetown",
+          "Carlton House Block",
+          "Kebayoran Baru",
+          "Carlton House"
+        ],
+        "top_rerank_score": 10.92417049407959,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did the Ritz-Carlton Jakarta hotel open?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ritz-Carlton Jakarta"
+        ],
+        "top_5_titles": [
+          "Ritz-Carlton Jakarta",
+          "The Ritz-Carlton, Georgetown",
+          "Carlton Theatre",
+          "Viejas Casino",
+          "Ambassador Hotel (Los Angeles)"
+        ],
+        "top_rerank_score": 8.076568603515625,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the Oberoi family known for?",
+        "answerable": true,
+        "relevant_titles": [
+          "Oberoi family"
+        ],
+        "top_5_titles": [
+          "Oberoi family",
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Motorenfabrik Oberursel",
+          "Corinthos family"
+        ],
+        "top_rerank_score": 9.108293533325195,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is Ishqbaaaz?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Peşrev",
+          "Tributyltin oxide",
+          "Eumacaria"
+        ],
+        "top_rerank_score": 9.612550735473633,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When did Ishqbaaaz premiere?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Source Code",
+          "Vacation with Derek",
+          "World Premiere (film)"
+        ],
+        "top_rerank_score": 8.862342834472656,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who portrays Shivaay in Ishqbaaaz?",
+        "answerable": true,
+        "relevant_titles": [
+          "Ishqbaaaz"
+        ],
+        "top_5_titles": [
+          "Ishqbaaaz",
+          "Ishqbaaaz",
+          "Alison DiLaurentis",
+          "Aneri Vajani",
+          "Ken Leung"
+        ],
+        "top_rerank_score": 9.33820629119873,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is Hotel Tallcorn located?",
+        "answerable": true,
+        "relevant_titles": [
+          "Hotel Tallcorn"
+        ],
+        "top_5_titles": [
+          "Hotel Tallcorn",
+          "Hotel Tallcorn",
+          "1717 Broadway",
+          "Crowne Plaza Hotel, Times Square",
+          "Elston Hall"
+        ],
+        "top_rerank_score": 10.233903884887695,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was Hotel Tallcorn built?",
+        "answerable": true,
+        "relevant_titles": [
+          "Hotel Tallcorn"
+        ],
+        "top_5_titles": [
+          "Hotel Tallcorn",
+          "Hotel Tallcorn",
+          "Manor and Cottages",
+          "Iowana Hotel",
+          "Hotel Bond"
+        ],
+        "top_rerank_score": 9.090498924255371,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Who founded Oberoi Hotels & Resorts?",
+        "answerable": true,
+        "relevant_titles": [
+          "Mohan Singh Oberoi"
+        ],
+        "top_5_titles": [
+          "Mohan Singh Oberoi",
+          "The Oberoi Group",
+          "Oberoi family",
+          "Meliá Hotels International",
+          "Welk Resort Group"
+        ],
+        "top_rerank_score": 10.120874404907227,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was The Oberoi Group founded?",
+        "answerable": true,
+        "relevant_titles": [
+          "The Oberoi Group"
+        ],
+        "top_5_titles": [
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Oberoi family",
+          "North Group",
+          "Murugappa Group"
+        ],
+        "top_rerank_score": 8.993195533752441,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is The Oberoi Group headquartered?",
+        "answerable": true,
+        "relevant_titles": [
+          "The Oberoi Group"
+        ],
+        "top_5_titles": [
+          "The Oberoi Group",
+          "Mohan Singh Oberoi",
+          "Oberoi family",
+          "Group O",
+          "Orient Group"
+        ],
+        "top_rerank_score": 8.670085906982422,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What does Future Fibre Technologies produce?",
+        "answerable": true,
+        "relevant_titles": [
+          "Future Fibre Technologies"
+        ],
+        "top_5_titles": [
+          "Future Fibre Technologies",
+          "FMC Technologies",
+          "Reinforced thermoplastic pipe",
+          "Internet Advisor",
+          "SolarWorld"
+        ],
+        "top_rerank_score": 7.027220726013184,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "Where is Future Fibre Technologies based?",
+        "answerable": true,
+        "relevant_titles": [
+          "Future Fibre Technologies"
+        ],
+        "top_5_titles": [
+          "Future Fibre Technologies",
+          "InPhase Technologies",
+          "Dell Technologies",
+          "Homestead Technologies",
+          "Mirror Worlds"
+        ],
+        "top_rerank_score": 11.270689010620117,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the 289th Military Police Company activated?",
+        "answerable": true,
+        "relevant_titles": [
+          "289th Military Police Company"
+        ],
+        "top_5_titles": [
+          "289th Military Police Company",
+          "Yongjugol",
+          "299th Cavalry Regiment (United States)",
+          "102d Intelligence Wing",
+          "VI Corps (United States)"
+        ],
+        "top_rerank_score": 10.633234977722168,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "When was the Glennwanis Hotel built?",
+        "answerable": true,
+        "relevant_titles": [
+          "Glennwanis Hotel"
+        ],
+        "top_5_titles": [
+          "Glennwanis Hotel",
+          "Manor and Cottages",
+          "Glennwanis Hotel",
+          "Iowana Hotel",
+          "Green Hotel"
+        ],
+        "top_rerank_score": 9.320261001586914,
+        "predicted_no_answer": false,
+        "recall_at_5": 1.0,
+        "reciprocal_rank_at_10": 1.0
+      },
+      {
+        "question": "What is the population of Mars City in 2025?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Groningen",
+          "Kansas City, Missouri",
+          "Liling",
+          "Quebec City",
+          "Lake City, Florida"
+        ],
+        "top_rerank_score": -3.536360740661621,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "Who won the 2025 World Chess Championship?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Arthur Feuerstein",
+          "Ellen Gilbert",
+          "Eugenio Torre",
+          "Bobby Fischer Against the World",
+          "Roel Boomstra"
+        ],
+        "top_rerank_score": 2.2412590980529785,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "What is the current stock price of ExampleCorp?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "New World Department Store China",
+          "GlaxoSmithKline",
+          "Bre-X",
+          "Shenzhen Stock Exchange",
+          "London Stock Exchange"
+        ],
+        "top_rerank_score": -4.815021514892578,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "What is the chemical formula of the fictional element Novarium?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "Gold(III) chloride",
+          "Tributyltin oxide",
+          "Aluminium oxide",
+          "Magnesium chloride",
+          "Cyclopropenone"
+        ],
+        "top_rerank_score": -5.822052478790283,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      },
+      {
+        "question": "How many moons does the fictional planet Zorvax have?",
+        "answerable": false,
+        "relevant_titles": [],
+        "top_5_titles": [
+          "13 Moons",
+          "Miranda (moon)",
+          "HD 16417 b",
+          "530 Turandot",
+          "Braal (DC Comics)"
+        ],
+        "top_rerank_score": -4.979798316955566,
+        "predicted_no_answer": true,
+        "recall_at_5": null,
+        "reciprocal_rank_at_10": null
+      }
+    ]
+  }
+]

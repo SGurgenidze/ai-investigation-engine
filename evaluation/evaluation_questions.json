@@ -1,0 +1,190 @@
+
+[
+  {
+    "question": "What is Radio City?",
+    "relevant_titles": ["Radio City (Indian radio station)"]
+  },
+  {
+    "question": "When was Radio City started?",
+    "relevant_titles": ["Radio City (Indian radio station)"]
+  },
+  {
+    "question": "What frequency does Radio City broadcast on?",
+    "relevant_titles": ["Radio City (Indian radio station)"]
+  },
+  {
+    "question": "Which languages of songs does Radio City play?",
+    "relevant_titles": ["Radio City (Indian radio station)"]
+  },
+  {
+    "question": "When was Radio City launched in Hyderabad?",
+    "relevant_titles": ["Radio City (Indian radio station)"]
+  },
+  {
+    "question": "What is Echosmith?",
+    "relevant_titles": ["Echosmith"]
+  },
+  {
+    "question": "When was Echosmith formed?",
+    "relevant_titles": ["Echosmith"]
+  },
+  {
+    "question": "Where was Echosmith formed?",
+    "relevant_titles": ["Echosmith"]
+  },
+  {
+    "question": "Which song is Echosmith best known for?",
+    "relevant_titles": ["Echosmith"]
+  },
+  {
+    "question": "Who are the members of Echosmith mentioned in the document?",
+    "relevant_titles": ["Echosmith"]
+  },
+  {
+    "question": "What is the First Arthur County Courthouse and Jail used for today?",
+    "relevant_titles": ["First Arthur County Courthouse and Jail"]
+  },
+  {
+    "question": "What was Arthur's Magazine?",
+    "relevant_titles": ["Arthur's Magazine"]
+  },
+  {
+    "question": "Where was Arthur's Magazine published?",
+    "relevant_titles": ["Arthur's Magazine"]
+  },
+  {
+    "question": "When was Arthur's Magazine published?",
+    "relevant_titles": ["Arthur's Magazine"]
+  },
+  {
+    "question": "Who edited Arthur's Magazine?",
+    "relevant_titles": ["Arthur's Magazine"]
+  },
+  {
+    "question": "When was First for Women magazine started?",
+    "relevant_titles": ["First for Women"]
+  },
+  {
+    "question": "Where is First for Women based?",
+    "relevant_titles": ["First for Women"]
+  },
+  {
+    "question": "What was the circulation of First for Women in 2011?",
+    "relevant_titles": ["First for Women"]
+  },
+  {
+    "question": "What was the Freeway Complex Fire?",
+    "relevant_titles": ["Freeway Complex Fire"]
+  },
+  {
+    "question": "When did the Freeway Complex Fire start?",
+    "relevant_titles": ["Freeway Complex Fire"]
+  },
+  {
+    "question": "How many residences were destroyed by the Freeway Complex Fire?",
+    "relevant_titles": ["Freeway Complex Fire"]
+  },
+  {
+    "question": "Where did the Freeway Complex Fire occur?",
+    "relevant_titles": ["Freeway Complex Fire"]
+  },
+  {
+    "question": "Who founded William Rast?",
+    "relevant_titles": ["William Rast"]
+  },
+  {
+    "question": "What product is William Rast best known for?",
+    "relevant_titles": ["William Rast"]
+  },
+  {
+    "question": "When was the first William Rast fashion show?",
+    "relevant_titles": ["William Rast"]
+  },
+  {
+    "question": "Where is the Ritz-Carlton Jakarta located?",
+    "relevant_titles": ["Ritz-Carlton Jakarta"]
+  },
+  {
+    "question": "When did the Ritz-Carlton Jakarta hotel open?",
+    "relevant_titles": ["Ritz-Carlton Jakarta"]
+  },
+  {
+    "question": "What is the Oberoi family known for?",
+    "relevant_titles": ["Oberoi family"]
+  },
+  {
+    "question": "What is Ishqbaaaz?",
+    "relevant_titles": ["Ishqbaaaz"]
+  },
+  {
+    "question": "When did Ishqbaaaz premiere?",
+    "relevant_titles": ["Ishqbaaaz"]
+  },
+  {
+    "question": "Who portrays Shivaay in Ishqbaaaz?",
+    "relevant_titles": ["Ishqbaaaz"]
+  },
+  {
+    "question": "Where is Hotel Tallcorn located?",
+    "relevant_titles": ["Hotel Tallcorn"]
+  },
+  {
+    "question": "When was Hotel Tallcorn built?",
+    "relevant_titles": ["Hotel Tallcorn"]
+  },
+  {
+    "question": "Who founded Oberoi Hotels & Resorts?",
+    "relevant_titles": ["Mohan Singh Oberoi"]
+  },
+  {
+    "question": "When was The Oberoi Group founded?",
+    "relevant_titles": ["The Oberoi Group"]
+  },
+  {
+    "question": "Where is The Oberoi Group headquartered?",
+    "relevant_titles": ["The Oberoi Group"]
+  },
+  {
+    "question": "What does Future Fibre Technologies produce?",
+    "relevant_titles": ["Future Fibre Technologies"]
+  },
+  {
+    "question": "Where is Future Fibre Technologies based?",
+    "relevant_titles": ["Future Fibre Technologies"]
+  },
+  {
+    "question": "When was the 289th Military Police Company activated?",
+    "relevant_titles": ["289th Military Police Company"]
+  },
+  {
+    "question": "When was the Glennwanis Hotel built?",
+    "relevant_titles": ["Glennwanis Hotel"]
+  },
+  {
+    "question": "What is the population of Mars City in 2025?",
+    "relevant_titles": [],
+    "answerable": false
+  },
+  {
+    "question": "Who won the 2025 World Chess Championship?",
+    "relevant_titles": [],
+    "answerable": false
+  },
+  {
+    "question": "What is the current stock price of ExampleCorp?",
+    "relevant_titles": [],
+    "answerable": false
+  },
+  {
+    "question": "What is the chemical formula of the fictional element Novarium?",
+    "relevant_titles": [],
+    "answerable": false
+  },
+  {
+    "question": "How many moons does the fictional planet Zorvax have?",
+    "relevant_titles": [],
+    "answerable": false
+  }
+
+
+]
