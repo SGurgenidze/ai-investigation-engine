@@ -79,25 +79,31 @@ def health_check():
     }
 
 
+
 @app.post("/ask")
 def ask_question(request: QuestionRequest):
+    print("Received /ask request", flush=True)
+
     search_engine = get_search_engine()
+
+    print("Search engine ready. Searching...", flush=True)
 
     results = search_engine.search(
         request.question,
         top_k=5,
-        candidate_k=200,
     )
 
-    threshold = 2.5
+    print(f"Search finished: {len(results)} results", flush=True)
 
-    if not results or results[0]["rerank_score"] < threshold:
+    if not results or all(
+        result["bm25_score"] <= 0 for result in results
+    ):
         return {
             "question": request.question,
             "answer": None,
             "citations": [],
             "abstained": True,
-            "message": "No sufficiently relevant evidence was found.",
+            "message": "No matching evidence was found.",
         }
 
     response = generate_answer(request.question, results)
@@ -106,6 +112,7 @@ def ask_question(request: QuestionRequest):
         "question": request.question,
         **response,
     }
+
 
 
 
