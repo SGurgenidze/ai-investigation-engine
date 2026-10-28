@@ -70,18 +70,13 @@ class HybridSearch:
             raise ValueError("At least one document is required")
 
         from rank_bm25 import BM25Okapi
-        from sentence_transformers import SentenceTransformer, util
 
-        self.util = util
         self.documents = documents
 
         print("Building BM25 index...", flush=True)
         self.bm25 = BM25Okapi(
             [tokenize(document["text"]) for document in documents]
         )
-
-        print("Loading sentence transformer model...", flush=True)
-        self.model = SentenceTransformer(MODEL_NAME)
 
     def search(
         self,
@@ -98,9 +93,10 @@ class HybridSearch:
         if candidate_k < 1:
             raise ValueError("candidate_k must be at least 1")
 
+        # 1. Calculate BM25 scores across the full corpus
         keyword_scores = self.bm25.get_scores(tokenize(query))
 
-  
+        # 2. Rank all documents by BM25
         keyword_ranking = sorted(
             range(len(self.documents)),
             key=lambda i: keyword_scores[i],
@@ -112,62 +108,34 @@ class HybridSearch:
             for rank, index in enumerate(keyword_ranking, start=1)
         }
 
+        # 3. Select top candidates
         candidate_indices = keyword_ranking[:candidate_k]
 
-        texts = [query] + [
-            self.documents[index]["text"]
-            for index in candidate_indices
-        ]
-
-        embeddings = self.model.encode(
-            texts,
-            convert_to_tensor=True,
-            normalize_embeddings=True,
-            show_progress_bar=False,
-        )
-
-        semantic_scores = self.util.cos_sim(
-            embeddings[0],
-            embeddings[1:],
-        )[0].cpu().tolist()
-
-        semantic_order = sorted(
-            range(len(candidate_indices)),
-            key=lambda i: semantic_scores[i],
-            reverse=True,
-        )
-
-        semantic_ranks = {
-            candidate_indices[position]: rank
-            for rank, position in enumerate(semantic_order, start=1)
-        }
-
-        rrf_k = 60
         results = []
-
-        for position, index in enumerate(candidate_indices):
+        for index in candidate_indices:
+            bm25_score = float(keyword_scores[index])
             bm25_rank = keyword_ranks[index]
-            semantic_rank = semantic_ranks[index]
 
-            rrf_score = (
-                1 / (rrf_k + bm25_rank)
-                + 1 / (rrf_k + semantic_rank)
-            )
+            # მსუბუქი სკორი სემანტიკურის გარეშე (ყველაფერი ეფუძნება BM25-ს და რანგს)
+            score = 1.0 / (60 + bm25_rank)
 
             results.append({
                 **self.documents[index],
-                "bm25_score": round(float(keyword_scores[index]), 4),
+                "bm25_score": round(bm25_score, 4),
                 "bm25_rank": bm25_rank,
-                "semantic_score": round(
-                    float(semantic_scores[position]), 4
-                ),
-                "semantic_rank": semantic_rank,
-                "score": round(rrf_score, 6),
-                "rerank_score": round(rrf_score, 6), 
+                "semantic_score": 0.0,
+                "semantic_rank": 999,
+                "score": round(score, 6),
+                "rerank_score": round(bm25_score, 4), # იმისათვის, რომ evaluation არ დაინგრეს
             })
 
+        # 4. Sort by score
         results.sort(
             key=lambda item: item["score"],
+            reverse=True,
+        )
+
+        return results[:top_k]
             reverse=True,
         )
 
