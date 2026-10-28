@@ -58,13 +58,20 @@ def write_documents(documents: list[dict]) -> None:
 
 
 
+
 @lru_cache(maxsize=1)
 def get_search_engine() -> HybridSearch:
+    print("Starting to load document chunks...", flush=True)
+
     documents = load_chunks(strategy="fixed")
+
+    print(f"Finished loading {len(documents)} chunks.", flush=True)
+
     return HybridSearch(documents)
 
 
 @app.get("/health")
+
 def health_check():
     return {
         "status": "ok",
