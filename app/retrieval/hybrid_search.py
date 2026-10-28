@@ -9,7 +9,6 @@ from app.ingestion.chunking import (
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_PATH = PROJECT_ROOT / "data" / "documents.jsonl"
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 def tokenize(text: str) -> list[str]:
     """Normalize text and remove common English stop words."""
@@ -116,7 +115,6 @@ class HybridSearch:
             bm25_score = float(keyword_scores[index])
             bm25_rank = keyword_ranks[index]
 
-            # მსუბუქი სკორი სემანტიკურის გარეშე (ყველაფერი ეფუძნება BM25-ს და რანგს)
             score = 1.0 / (60 + bm25_rank)
 
             results.append({
@@ -126,16 +124,12 @@ class HybridSearch:
                 "semantic_score": 0.0,
                 "semantic_rank": 999,
                 "score": round(score, 6),
-                "rerank_score": round(bm25_score, 4), # იმისათვის, რომ evaluation არ დაინგრეს
+                "rerank_score": round(bm25_score, 4),
             })
 
         # 4. Sort by score
         results.sort(
             key=lambda item: item["score"],
-            reverse=True,
-        )
-
-        return results[:top_k]
             reverse=True,
         )
 
