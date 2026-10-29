@@ -17,8 +17,13 @@ from app.rag.answer_generator import generate_answer
 app = FastAPI(
     title="AI Investigation Engine",
     description="Evidence-grounded question answering across documents",
-    version="0.3.0",
+    version="0.3.1",
 )
+
+
+# Temporary limit for Render's 512 MB RAM instance.
+# This limits loaded chunks, not the number of source documents read.
+MAX_SEARCH_CHUNKS = 3000
 
 
 class QuestionRequest(BaseModel):
@@ -32,6 +37,7 @@ class DocumentRequest(BaseModel):
 
 
 def read_documents() -> list[dict]:
+    """Read source documents from the JSONL file."""
     if not DATA_PATH.exists():
         return []
 
@@ -45,33 +51,48 @@ def read_documents() -> list[dict]:
     return documents
 
 
-
 def write_documents(documents: list[dict]) -> None:
+    """Save source documents and invalidate the cached search engine."""
+    DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+
     with DATA_PATH.open("w", encoding="utf-8") as file:
         for document in documents:
-            file.write(
-                json.dumps(document, ensure_ascii=False) + "\n"
-            )
+            file.write(json.dumps(document, ensure_ascii=False) + "\n")
 
-    # Rebuild the search index on the next search request.
     get_search_engine.cache_clear()
-
-
 
 
 @lru_cache(maxsize=1)
 def get_search_engine() -> HybridSearch:
-    print("Starting to load document chunks...", flush=True)
+    """Build and cache a limited-size search index."""
+    print(
+        f"Loading up to {MAX_SEARCH_CHUNKS} search chunks...",
+        flush=True,
+    )
 
-    documents = load_chunks(strategy="fixed")
+    documents = load_chunks(
+        limit=MAX_SEARCH_CHUNKS,
+        strategy="fixed",
+    )
 
-    print(f"Finished loading {len(documents)} chunks.", flush=True)
+    print(
+        f"Loaded {len(documents)} chunks. Building search index...",
+        flush=True,
+    )
 
-    return HybridSearch(documents)
+    if not documents:
+        raise HTTPException(
+            status_code=503,
+            detail="No searchable documents are available.",
+        )
+
+    search_engine = HybridSearch(documents)
+
+    print("Search index is ready.", flush=True)
+    return search_engine
 
 
 @app.get("/health")
-
 def health_check():
     return {
         "status": "ok",
@@ -79,10 +100,9 @@ def health_check():
     }
 
 
-
 @app.post("/ask")
 def ask_question(request: QuestionRequest):
-    print("Received /ask request", flush=True)
+    print("Received /ask request.", flush=True)
 
     search_engine = get_search_engine()
 
@@ -91,12 +111,17 @@ def ask_question(request: QuestionRequest):
     results = search_engine.search(
         request.question,
         top_k=5,
+        candidate_k=100,
     )
 
-    print(f"Search finished: {len(results)} results", flush=True)
+    print(
+        f"Search finished. Results: {len(results)}",
+        flush=True,
+    )
 
     if not results or all(
-        result["bm25_score"] <= 0 for result in results
+        result.get("bm25_score", 0) <= 0
+        for result in results
     ):
         return {
             "question": request.question,
@@ -114,8 +139,6 @@ def ask_question(request: QuestionRequest):
     }
 
 
-
-
 @app.get("/documents")
 def list_documents(
     limit: int = Query(default=100, ge=1, le=500),
@@ -131,7 +154,6 @@ def list_documents(
         "offset": offset,
         "documents": documents[offset:offset + limit],
     }
-
 
 
 @app.post("/documents", status_code=201)
