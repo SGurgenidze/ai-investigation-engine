@@ -101,7 +101,7 @@ INSUFFICIENT_EVIDENCE:
 
     try:
         client = genai.Client(api_key=api_key.strip())
-        model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 
         print(
             f"Calling Gemini model: {model}",
