@@ -24,7 +24,14 @@ def generate_answer(question: str, results: list[dict]) -> dict:
     if not results:
         return _abstain("No supporting evidence was found.")
 
-    api_key = os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("GEMINI_API_KEY")
+    
+    print(
+        "GEMINI_API_KEY configured:",
+        bool(api_key),
+        flush=True,
+    )
+    
     if not api_key:
         return _abstain(
             "LLM is not configured. Set GEMINI_API_KEY in your .env file."
