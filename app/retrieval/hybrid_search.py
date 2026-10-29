@@ -1,5 +1,7 @@
+
 import json
 import re
+import heapq
 from pathlib import Path
 
 from app.ingestion.chunking import (
@@ -10,72 +12,101 @@ from app.ingestion.chunking import (
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_PATH = PROJECT_ROOT / "data" / "documents.jsonl"
 
+
+# Common English stop words
+STOP_WORDS = {
+    "who", "was", "is", "the", "of", "a", "an",
+    "in", "on", "for", "to", "and", "did", "do",
+    "does", "what", "which", "that", "by", "with",
+    "movie", "film",
+}
+
+
 def tokenize(text: str) -> list[str]:
     """Normalize text and remove common English stop words."""
-    stop_words = {
-        "who", "was", "is", "the", "of", "a", "an",
-        "in", "on", "for", "to", "and", "did", "do",
-        "does", "what", "which", "that", "by", "with",
-        "movie", "film"
-    }
-
     tokens = re.findall(r"\b\w+\b", text.casefold())
-    return [token for token in tokens if token not in stop_words]
+    return [token for token in tokens if token not in STOP_WORDS]
 
-print("Project root:", PROJECT_ROOT)
-print("Data path:", DATA_PATH)
-print("File exists:", DATA_PATH.exists())
 
 def load_chunks(
     limit: int | None = None,
-    strategy: str = "sentence",
+    strategy: str = "fixed",
 ) -> list[dict]:
     """Load documents and split their text into chunks."""
+
     if strategy == "sentence":
         chunker = sentence_based_chunks
     elif strategy == "fixed":
         chunker = fixed_size_chunks
     else:
-        raise ValueError("strategy must be 'sentence' or 'fixed'")
+        raise ValueError(
+            "strategy must be 'sentence' or 'fixed'"
+        )
+
+    if not DATA_PATH.exists():
+        print(f"Data file not found: {DATA_PATH}", flush=True)
+        return []
 
     chunks = []
 
-    if DATA_PATH.exists():
-        with DATA_PATH.open(encoding="utf-8") as file:
-            for line in file:
-                document = json.loads(line)
+    print("Loading document chunks...", flush=True)
 
-                for index, chunk_text in enumerate(
-                    chunker(document["text"])
-                ):
-                    chunks.append(
-                        {
-                            "id": f'{document["id"]}-chunk-{index}',
-                            "title": document.get("title", "Untitled"),
-                            "text": chunk_text,
-                            "source": document.get("source", "unknown"),
-                        }
-                    )
+    with DATA_PATH.open("r", encoding="utf-8") as file:
+        for line in file:
+            if not line.strip():
+                continue
+
+            document = json.loads(line)
+            text = document.get("text", "")
+
+            if not text:
+                continue
+
+            for index, chunk_text in enumerate(chunker(text)):
+                chunks.append({
+                    "id": f'{document.get("id", "unknown")}-chunk-{index}',
+                    "title": document.get("title", "Untitled"),
+                    "text": chunk_text,
+                    "source": document.get("source", "unknown"),
+                })
 
                 if limit is not None and len(chunks) >= limit:
+                    print(
+                        f"Loaded {len(chunks)} chunks.",
+                        flush=True,
+                    )
                     return chunks[:limit]
 
+    print(f"Loaded {len(chunks)} chunks.", flush=True)
     return chunks
 
 
 class HybridSearch:
+    """Lightweight BM25 search without transformer models."""
+
     def __init__(self, documents: list[dict]):
         if not documents:
-            raise ValueError("At least one document is required")
+            raise ValueError(
+                "At least one document is required"
+            )
 
         from rank_bm25 import BM25Okapi
 
         self.documents = documents
 
         print("Building BM25 index...", flush=True)
-        self.bm25 = BM25Okapi(
-            [tokenize(document["text"]) for document in documents]
-        )
+
+        tokenized_documents = [
+            tokenize(document.get("text", ""))
+            for document in documents
+        ]
+
+        self.bm25 = BM25Okapi(tokenized_documents)
+
+        # Release the temporary tokenized list.
+        del tokenized_documents
+
+        print("BM25 index ready.", flush=True)
 
     def search(
         self,
@@ -83,7 +114,9 @@ class HybridSearch:
         top_k: int = 5,
         candidate_k: int = 200,
     ) -> list[dict]:
-        if not query.strip():
+        """Return the best matching documents using BM25."""
+
+        if not query or not query.strip():
             return []
 
         if top_k < 1:
@@ -92,45 +125,48 @@ class HybridSearch:
         if candidate_k < 1:
             raise ValueError("candidate_k must be at least 1")
 
-        # 1. Calculate BM25 scores across the full corpus
-        keyword_scores = self.bm25.get_scores(tokenize(query))
+        query_tokens = tokenize(query)
 
-        # 2. Rank all documents by BM25
-        keyword_ranking = sorted(
-            range(len(self.documents)),
-            key=lambda i: keyword_scores[i],
-            reverse=True,
+        if not query_tokens:
+            return []
+
+        # Calculate BM25 scores.
+        scores = self.bm25.get_scores(query_tokens)
+
+        # Select only the highest-scoring candidates.
+        candidate_count = min(
+            candidate_k,
+            len(self.documents),
         )
 
-        keyword_ranks = {
-            index: rank
-            for rank, index in enumerate(keyword_ranking, start=1)
-        }
-
-        # 3. Select top candidates
-        candidate_indices = keyword_ranking[:candidate_k]
+        best_indices = heapq.nlargest(
+            candidate_count,
+            range(len(self.documents)),
+            key=lambda index: scores[index],
+        )
 
         results = []
-        for index in candidate_indices:
-            bm25_score = float(keyword_scores[index])
-            bm25_rank = keyword_ranks[index]
 
-            score = 1.0 / (60 + bm25_rank)
+        for rank, index in enumerate(best_indices, start=1):
+            bm25_score = float(scores[index])
+
+            # Skip documents with no matching terms.
+            if bm25_score <= 0:
+                continue
+
+            document = self.documents[index]
 
             results.append({
-                **self.documents[index],
+                **document,
                 "bm25_score": round(bm25_score, 4),
-                "bm25_rank": bm25_rank,
+                "bm25_rank": rank,
                 "semantic_score": 0.0,
                 "semantic_rank": 999,
-                "score": round(score, 6),
+                "score": round(1.0 / (60 + rank), 6),
                 "rerank_score": round(bm25_score, 4),
             })
 
-        # 4. Sort by score
-        results.sort(
-            key=lambda item: item["score"],
-            reverse=True,
-        )
+            if len(results) >= top_k:
+                break
 
-        return results[:top_k]
+        return results
